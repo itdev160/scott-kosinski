@@ -1,3 +1,3 @@
 # scott-kosinski
 
-this is an edit
+This repo contains assignments and projects for ITDEV-160-002.
