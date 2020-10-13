@@ -1,0 +1,25 @@
+* {
+    font-family: "Ubuntu", "Montserrat", sans-serif;
+}
+
+main {
+    display: grid;
+    grid-template: repeat(1, 1fr) / repeat(2, 1fr);
+    grid-gap: 1em;
+    margin-bottom: 1em;
+}
+
+.container {
+    position: relative;
+    display: block;
+    height: 45vh;
+    width: 45vw;
+}
+
+.header {
+
+}
+
+.body {
+
+}
