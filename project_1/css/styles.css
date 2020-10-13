@@ -1,35 +1,55 @@
 * {
     font-family: "Ubuntu", "Montserrat", sans-serif;
     color: #093;
+    margin: 0;
+    padding: 0;
 }
 
 header {
     display: grid;
     grid-template: 5em, 1fr;
     justify-items: center;
-    margin-bottom: 1.5em;
+    margin: 1.5em;
     border: 2px solid #093;
     border-left: 0;
     border-right: 0;
+    padding: 1em;
 }
 
 main {
     display: grid;
     grid-template: repeat(1, 1fr) / repeat(2, 1fr);
     grid-gap: 1em;
+    justify-items: center;
     margin-bottom: 1em;
 }
 
-main h2 {
+table img {
+    display: block;
+    position: relative;
+    max-width: 30vw;
+    opacity: 0.3;
+}
+
+table h2 {
+    position: absolute;
+    display: block;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
     font-size: 3em;
 }
 
-table ul{
+table ul {
     position: absolute;
     display: none;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+}
+
+ul p {
+    display: inline;
 }
 
 .container {
@@ -47,10 +67,11 @@ table ul{
     transform: translate(-50%, -50%);
 }
 
-table td:hover > ul{
+.info:hover > ul{
     display: block;
+    width: max-content;
 }
 
-table td:hover > h2 {
+.info:hover > h2 {
     display: none;
 }
