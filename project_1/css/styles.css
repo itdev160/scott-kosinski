@@ -1,5 +1,16 @@
 * {
     font-family: "Ubuntu", "Montserrat", sans-serif;
+    color: #093;
+}
+
+header {
+    display: grid;
+    grid-template: 5em, 1fr;
+    justify-items: center;
+    margin-bottom: 1.5em;
+    border: 2px solid #093;
+    border-left: 0;
+    border-right: 0;
 }
 
 main {
@@ -9,17 +20,37 @@ main {
     margin-bottom: 1em;
 }
 
+main h2 {
+    font-size: 3em;
+}
+
+table ul{
+    position: absolute;
+    display: none;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
 .container {
     position: relative;
     display: block;
-    height: 45vh;
+    height: 40vh;
     width: 45vw;
 }
 
-.header {
-
+.info {
+    position: absolute;
+    display: block;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
 
-.body {
+table td:hover > ul{
+    display: block;
+}
 
+table td:hover > h2 {
+    display: none;
 }
