@@ -9,7 +9,7 @@
             name: "Basil",
             light: "Medium-Full",
             soil: "Well draining",
-            water: "Lots",
+            water: "When thirsty",
             selector: "p1"
         },
         {
@@ -17,7 +17,7 @@
             name: "Cilantro",
             light: "Medium-Full",
             soil: "Whatever",
-            water: "Lots",
+            water: "When thirsty",
             selector: "p2"
         },
         {
