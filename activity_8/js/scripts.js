@@ -32,19 +32,25 @@ function saveContent() {
     var text = get('edit-content-text');
     var content = get('display-content');
 
-    // Create content elements
-    var newTitle = document.createElement('h2');
-    var newTitleText = document.createTextNode(title.value);
-    var newContent = document.createElement('p');
-    var newContentText = document.createTextNode(text.value);
+    if (!title.value) {
+        var titleMessage = get('edit-title-message');
+        titleMessage.textContent = 'Please supply a title.';
+    }
+    else {
+        // Create content elements
+        var newTitle = document.createElement('h2');
+        var newTitleText = document.createTextNode(title.value);
+        var newContent = document.createElement('p');
+        var newContentText = document.createTextNode(text.value);
 
-    // Add elements
-    newTitle.appendChild(newTitleText);
-    newContent.appendChild(newContentText);
-    content.appendChild(newTitle);
-    content.appendChild(newContent);
+        // Add elements
+        newTitle.appendChild(newTitleText);
+        newContent.appendChild(newContentText);
+        content.appendChild(newTitle);
+        content.appendChild(newContent);
 
-    closeModal();
+        closeModal();
+    }   
 }
 
 // Wire up event handlers
